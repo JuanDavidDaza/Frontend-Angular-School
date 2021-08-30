@@ -5,6 +5,7 @@ import { RegisterTeacherComponent } from "./teacher/register-teacher/register-te
 import { RegisterStudentComponent } from "./student/register-student/register-student.component";
 import { RegisterCoursesComponent } from "./courses/register-courses/register-courses.component";
 import { RegisterMatterComponent } from "./courses/register-matter/register-matter.component";
+import { IndexComponent } from "./home/index/index.component";
 import { LoginComponent } from "./login/login.component";
 
 const routes: Routes = [
@@ -12,6 +13,10 @@ const routes: Routes = [
     path:'',
     component:LoginComponent,
     pathMatch: 'full',
+  },
+  {
+    path:'index',
+    component:IndexComponent,
   },
   {
     path:'registerStudent',

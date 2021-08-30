@@ -29,6 +29,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { LoginComponent } from './login/login.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { IndexComponent } from './home/index/index.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     HeaderComponent,
     FooterComponent,
     LoginComponent,
+    IndexComponent,
   ],
   imports: [
     BrowserModule,

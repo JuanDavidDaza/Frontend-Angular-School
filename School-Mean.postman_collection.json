@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "4fd2682b-1fc0-46d0-9dc0-699f3032817a",
+		"name": "School-Mean",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "registerRole",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"teacher\",\r\n    \"description\": \"usuario admin de la app\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/role/registerRole",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"role",
+						"registerRole"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registerTeacher",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Juan David Daza\",\r\n    \"email\":\"juandavid5845@hotmail.com\",\r\n    \"phone\":\"322398123\",\r\n    \"password\":\"1234\",\r\n    \"school\":\"Colegio de Pepita\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/user/registerTeacher",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"user",
+						"registerTeacher"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registerCourse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Septimo\",\r\n    \"school\":\"Colegio de Pepita\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/course/registerCourse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"course",
+						"registerCourse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registerStudent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Samuel Leon\",\r\n    \"school\":\"Colegio de Pepita\",\r\n    \"course\":\"Septimo\",\r\n    \"phone\":\"32212341\",\r\n    \"email\":\"samuel@gmail.com\",\r\n    \"password\":\"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/user/registerStudent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"user",
+						"registerStudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registerMatter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Naturales\",\r\n    \"numberStudent\":\"40\",\r\n    \"teacher\":\"Juan David Daza\",\r\n    \"course\":\"Septimo\",\r\n    \"place\":\"Salon 401\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/matter/registerMatter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"matter",
+						"registerMatter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listMatter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/matter/listMatter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"matter",
+						"listMatter"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

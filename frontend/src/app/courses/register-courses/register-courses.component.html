@@ -6,25 +6,15 @@
             <mat-card-content>
                 <div class="container">
                     <mat-form-field>
-                        <input matInput required type="text" placeholder="Name coruse " />
+                        <input [(ngModel)]="registerData.name"  matInput required type="text" placeholder="Name coruse " />
                     </mat-form-field>
                     <mat-form-field>
-                        <input matInput required type="text" placeholder="School" />
-                    </mat-form-field>
-                    
-                    <mat-form-field>
-                        <input matInput required type="number" placeholder="Number Student" />
-                    </mat-form-field>
-                    <mat-form-field>
-                        <input matInput required type="text" placeholder="Teacher" />
-                    </mat-form-field>
-                    <mat-form-field>
-                        <input matInput required type="text" placeholder="Place" />
+                        <input [(ngModel)]="registerData.school"  matInput required type="text" placeholder="School" />
                     </mat-form-field>
                 </div>
             </mat-card-content>
             <mat-card-actions>
-                <button class="button colorButton" mat-raised-button>
+                <button (click)="registerCourse()" class="button colorButton" mat-raised-button>
                     Register
                 </button>
             </mat-card-actions>
